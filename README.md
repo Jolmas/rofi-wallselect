@@ -30,7 +30,9 @@ Consulta el detalle y los comandos por distribución en
 ## Instalación
 
 ```bash
+git clone https://github.com/Jolmas/rofi-wallselect.git
 cd rofi-wallselect
+chmod +x install.sh
 ./install.sh
 ```
 
