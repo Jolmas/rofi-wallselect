@@ -101,9 +101,6 @@ bind = SUPER, W, exec, ~/.config/rofi/wallselect/wallselect.sh
 }
 ```
 
-> En la configuración de labwc de este equipo, `W-w` ya está ocupado por el
-> dashboard de fondos de DMS; elige otra combinación.
-
 ## Configuración
 
 Edita `~/.config/rofi/wallselect/config.sh` (todas las opciones son opcionales):
