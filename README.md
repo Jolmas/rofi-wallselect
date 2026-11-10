@@ -15,7 +15,6 @@ Pensado para sesiones Wayland con DMS, pero incluye respaldos para `swww` y
 - Preselecciona el fondo que tienes puesto.
 - Miniaturas cacheadas y regeneradas automáticamente al añadir fondos.
 - Notificaciones «Fondo cambiado» y «Tema aplicado».
-- Atajo `Ctrl+Shift+T` para abrir los ajustes de transición de DMS.
 - Aplicación por DMS con transiciones animadas; respaldo a `swww`/`swaybg`.
 
 ## Requisitos
