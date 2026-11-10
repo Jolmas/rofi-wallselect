@@ -1,0 +1,15 @@
+/* Paleta de respaldo para rofi-wallselect.
+ *
+ * Solo se instala si ~/.config/rofi/shared/colors.rasi no existe.
+ * Si usas matugen o pywal, ese archivo puede importar una paleta dinámica
+ * generada desde el fondo actual y este quedará intacto.
+ */
+
+* {
+    background:     #131318;
+    background-alt: #201f25;
+    foreground:     #e5e1e9;
+    selected:       #c4c0ff;
+    active:         #ebb9d1;
+    urgent:         #ffb4ab;
+}

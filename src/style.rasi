@@ -1,0 +1,119 @@
+/*****------------------------------------------------------------*****/
+/*  wallselect - selector de fondos para rofi + DMS                 */
+/*                                                                  */
+/*  El script sobreescribe con -theme-str:                          */
+/*    - listview.columns   (rejilla responsive)                      */
+/*    - element-icon.size  (tamaño de miniatura)                     */
+/*    - window.background-image (fondo actual difuminado)             */
+/*------------------------------------------------------------------*/
+
+@import "~/.config/rofi/shared/colors.rasi"
+@import "~/.config/rofi/shared/fonts.rasi"
+
+* {
+    border-radius:               14px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+/*****----- Ventana -----*****/
+window {
+    background-color:            @background;
+    width:                       86%;
+    location:                    center;
+    anchor:                      center;
+    padding:                     20px;
+    border:                      2px;
+    border-color:                #ffffff1f;
+}
+
+/*****----- Estructura -----*****/
+mainbox {
+    background-color:            transparent;
+    spacing:                     14px;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "message", "listview" ];
+}
+
+/*****----- Barra de búsqueda -----*****/
+inputbar {
+    background-color:            @background-alt;
+    padding:                     12px 16px;
+    spacing:                     10px;
+    children:                    [ "prompt", "entry" ];
+}
+
+prompt {
+    font:                        "Inter Bold 10";
+    text-color:                  @selected;
+    background-color:            inherit;
+}
+
+entry {
+    placeholder:                 "Escribe para filtrar…";
+    placeholder-color:           #8b8894;
+    text-color:                  @foreground;
+    background-color:            inherit;
+    cursor:                      text;
+}
+
+/*****----- Barra de información -----*****/
+message {
+    background-color:            transparent;
+    padding:                     0px 6px;
+}
+
+textbox {
+    background-color:            inherit;
+    text-color:                  #b9b5c4;
+    font:                        "Inter 9";
+    horizontal-align:            0.0;
+    vertical-align:              0.5;
+    markup:                      true;
+}
+
+/*****----- Rejilla de miniaturas -----*****/
+listview {
+    columns:                     6;
+    lines:                       3;
+    layout:                      vertical;
+    fixed-columns:               true;
+    fixed-height:                true;
+    spacing:                     12px;
+    background-color:            transparent;
+}
+
+element {
+    orientation:                 vertical;
+    padding:                     8px;
+    spacing:                     0px;
+    background-color:            @background-alt;
+    border:                      2px;
+    border-color:                #00000000;
+    cursor:                      pointer;
+}
+
+element selected {
+    background-color:            @background-alt;
+    border-color:                @selected;
+}
+
+element-icon {
+    size:                        150px;
+    background-color:            transparent;
+    border-radius:               8px;
+}
+
+/* Oculta los nombres de archivo debajo de cada miniatura. */
+element-text {
+    enabled:                     false;
+}
+
+/*****----- Barra de desplazamiento -----*****/
+scrollbar {
+    width:                       6px;
+    handle-width:                6px;
+    handle-color:                @selected;
+    background-color:            #ffffff12;
+    border-radius:               3px;
+}
