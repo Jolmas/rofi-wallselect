@@ -73,7 +73,6 @@ mkdir -p ~/.cache/rofi-wallselect/thumbs
 | Tecla          | Acción                                       |
 | -------------- | -------------------------------------------- |
 | `Enter`        | Aplicar el fondo seleccionado                |
-| `Ctrl+Shift+T` | Abrir los ajustes de DMS (pestaña Wallpaper) |
 | `Esc`          | Cerrar                                       |
 
 ## Integración
