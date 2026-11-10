@@ -125,9 +125,6 @@ Las transiciones pertenecen a DMS. Valores disponibles:
 `none`, `fade`, `wipe`, `disc`, `stripes`, `iris bloom`, `pixelate`, `portal` y
 `random`.
 
-La forma recomendada de cambiarlas es abrir el menú y pulsar `Ctrl+Shift+T`; se
-abre la pestaña Wallpaper de los ajustes de DMS y el cambio se aplica en vivo.
-
 También puedes editar `~/.local/state/dms/session.json`:
 
 ```json
